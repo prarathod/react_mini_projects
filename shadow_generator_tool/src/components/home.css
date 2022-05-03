@@ -1,0 +1,24 @@
+.App{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.controls{
+    width: 40vw;
+    margin: 5%;
+}
+
+.box{
+    width: 40vw;
+    height: 50vh;
+    
+    color: white;
+    margin: 5%;
+    text-align: center;
+    padding: 20vh 0px;
+
+}
+

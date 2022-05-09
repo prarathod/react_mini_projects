@@ -7,7 +7,9 @@ process.stdin.on('data', function (n) {
         t = n;
     } else {
         if (t != "") {
-            process.stdout.write(sum(t.toString().trim(), n.toString().trim()));
+            let str1 = t.toString().trim();
+            let str2 = n.toString().trim();
+            process.stdout.write(sum(str1,str2));
         } else {
             process.exit();
         }

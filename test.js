@@ -15,3 +15,37 @@ process.stdin.on('data', function (n) {
         }
     }
 });
+
+
+
+
+
+
+
+
+function sum(a,b){
+    let obj1 ={},obj2={};
+    if(a.length!=b.length){
+        return "0";
+    }else{
+        for(var i=0;i<a.length;i++){
+            if(obj1[a[i]]==undefined){
+                obj1[a[i]]=1;
+            }else{
+                obj1[a[i]]++;
+            }
+
+            if(obj2[b[i]]==undefined){
+                obj2[b[i]]=1;
+            }else{
+                obj2[b[i]]++;
+            }
+        }
+    }
+    for(elm in obj1){
+        if(obj1[elm]!=obj2[elm]){
+            return "0"
+        }
+    }
+    return '1';
+}

@@ -10,15 +10,12 @@ process.stdin.on('data', function (n) {
             let str1 = t.toString().trim();
             let str2 = n.toString().trim();
             process.stdout.write(sum(str1,str2));
+            process.exit();
         } else {
             process.exit();
         }
     }
 });
-
-
-
-
 
 
 
